@@ -1,0 +1,16 @@
+.site-nav, .site-nav-left {
+    display: -ms-flexbox;
+    display: flex;
+    overflow-y: hidden;
+}
+
+.site-nav {
+    position: relative;
+    z-index: 300;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    height: 40px;
+    font-size: 1.2rem;
+}

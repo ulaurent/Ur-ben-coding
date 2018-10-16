@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-text{
+  font-size : 20px;
+  font-family: Dancing Script;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.site-nav {
+  position: relative;
+  z-index: 300;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  overflow-y: hidden;
+  height: 60px;
+  font-size: 1.2rem;
+}
+
+.site-nav-left {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  margin-right: 10px;
+  padding-bottom: 80px;
+  letter-spacing: 0.4px;
+  white-space: nowrap;
+
+  -ms-overflow-scrolling: touch;
+}
+
+/* Site Nav Hack Explanation (above):
+
+What's happening above it .site-nav-left is set to overflow-x and allow sideways scrolling, so that when there isn't enough space for all nav items (either due to lots of nav items, or a small viewport), you can still scroll side-to-side to reach them.
+
+The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px of padding-bottom and a 40px fixed height parent (.site-nav) hides that entirely. Slightly hacky code. But nice clean end-result.
+
+*/
+.inner {
+  margin: 0 auto;
+  max-width: 1040px;
+  width: 100%;
+}
+
+.site-nav-logo {
+  flex-shrink: 0;
+  display: block;
+  margin-right: 24px;
+  padding: 11px 0;
+  color: #fff;
+  font-size: 1.7rem;
+  line-height: 1em;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}
+
+.site-nav-logo:hover {
+  text-decoration: none;
+}
+
+.site-nav-logo img {
+  display: block;
+  width: auto;
+  height: 21px;
+}
+
+.nav {
+  display: flex;
+  margin: 0 0 0 -12px;
+  padding: 0;
+  list-style: none;
+}
+
+.nav li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.nav li a {
+  display: block;
+  margin: 0;
+  padding: 10px 12px;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.nav li a:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+
+.site-nav-right {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.social-links {
+  flex-shrink: 0;
+  padding-top: 60px;
+  padding-left: 10px;
+  padding-right: 60px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.social-links a:last-of-type {
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+
+#blcolor {
+  height: 200px;
+  background-image: linear-gradient(to right, rgb(233, 67, 185),rgb(79, 197, 166));
+}
